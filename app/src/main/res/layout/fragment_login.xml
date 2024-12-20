@@ -7,6 +7,10 @@
     android:background="@drawable/water_app_bg"
     tools:context=".Login">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="450dp"
@@ -30,8 +34,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.104">
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -56,9 +59,9 @@
                     <EditText
                         android:layout_width="0dp"
                         android:layout_height="55dp"
-                        android:layout_weight="9"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="10dp"
+                        android:layout_weight="9"
                         android:elegantTextHeight="true"
                         android:fontFamily="@font/poppins_medium"
                         android:hint="@string/full_name"
@@ -127,18 +130,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:orientation="horizontal"
-                android:gravity="end">
+                android:gravity="end"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/poppins_medium"
                     android:text="@string/forgot_password"
                     android:textColor="#4285F4"
-                    android:textSize="14sp"
-                    android:elegantTextHeight="true"
-                    android:fontFamily="@font/poppins_medium"/>
-
+                    android:textSize="14sp" />
 
 
             </LinearLayout>
@@ -148,10 +150,51 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/primary_button"
-                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_medium"
                 android:text="@string/login"
-                android:textSize="16sp"
-                android:fontFamily="@font/poppins_medium"/>
+                android:textAllCaps="false"
+                android:elegantTextHeight="true"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@drawable/grey_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="26dp"
+                    android:text="@string/or"
+                    android:textColor="#C8C8C8" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@drawable/grey_line" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/grey_border_button"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/create_account"
+                android:elegantTextHeight="true"
+                android:textColor="#C8C8C8"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
 
         </LinearLayout>
 
