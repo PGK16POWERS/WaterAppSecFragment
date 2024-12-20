@@ -8,12 +8,22 @@
     tools:context=".Login">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="156dp"
+        android:text="@string/welcome_back"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/form_bg"
         android:maxWidth="550dp"
         android:padding="30dp"
@@ -150,10 +160,10 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/primary_button"
+                android:elegantTextHeight="true"
                 android:fontFamily="@font/poppins_medium"
                 android:text="@string/login"
                 android:textAllCaps="false"
-                android:elegantTextHeight="true"
                 android:textSize="16sp" />
 
             <LinearLayout
@@ -188,11 +198,11 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/grey_border_button"
+                android:elegantTextHeight="true"
                 android:fontFamily="@font/poppins_medium"
                 android:text="@string/create_account"
-                android:elegantTextHeight="true"
-                android:textColor="#C8C8C8"
                 android:textAllCaps="false"
+                android:textColor="#C8C8C8"
                 android:textSize="16sp" />
 
 
